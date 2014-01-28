@@ -13,7 +13,7 @@
     });
     this.mouse = this.randomMouse();
     this.mouseCounter = true;
-    this.mouseDir = this.mouseDirs[Math.floor(Math.random() * 4)];
+    this.mouseDir = [0, 0];
   };
   
   Board.prototype.makeGrid = function (size) {

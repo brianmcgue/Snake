@@ -25,6 +25,7 @@
       if (dir === 'paused') {
         view.running = !view.running;
       } else if (dir && view.running) {
+        view.started = true;
         view.board.snake.turn(dir);
       }
     });
@@ -33,6 +34,7 @@
   View.prototype.renderLoss = function () {
     // alert game is over without using alert
     delete this.board;
+    this.started = false;
     clearInterval(this.interval);
     this.start();
   };
@@ -44,7 +46,7 @@
   };
   
   View.prototype.step = function () {
-    if (this.running) this.board.move();
+    if (this.running && this.started) this.board.move();
     if (this.board.lost()) {
       this.renderLoss();
     } else {
