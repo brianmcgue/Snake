@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.js">
+    </script>
+    <script src= "http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min.js">
+    </script>
+    <script type="text/javascript" src="snake.js"></script>
+    <script type="text/javascript" src="board.js"></script>
+    <script type="text/javascript" src="snake_ui.js"></script>
+    <link rel="stylesheet" href="snake.css">
+  </head>
+  <body>
+    <div class="container"></div>
+  </body>
+  <script>
+    var view = new SG.View($('.container'));
+    view.start();
+  </script>
+</html>

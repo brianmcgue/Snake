@@ -1,0 +1,44 @@
+.container {
+  display: block;
+  width: 540px;
+}
+
+div .grid {
+  clear: left;
+}
+
+div .segment {
+  float: left;
+  padding: 0px;
+  margin: 1px;
+  width: 25px;
+  height: 25px;
+  background-color: forestgreen;
+}
+
+div .apple {
+  float: left;
+  padding: 0px;
+  margin: 1px;
+  width: 25px;
+  height: 25px;
+  background-color: darkred;  
+}
+
+div .poop {
+  float: left;
+  padding: 0px;
+  margin: 1px;
+  width: 25px;
+  height: 25px;
+  background-color: #69482D;
+}
+
+div .blank {
+  float: left;
+  padding: 0px;
+  margin: 1px;
+  width: 25px;
+  height: 25px;
+  background-color: darkgray;
+}
