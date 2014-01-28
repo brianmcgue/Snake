@@ -16,13 +16,13 @@ div .segment {
   background-color: forestgreen;
 }
 
-div .apple {
+div .mouse {
   float: left;
   padding: 0px;
   margin: 1px;
   width: 25px;
   height: 25px;
-  background-color: darkred;  
+  background-color: #E6E6E6;  
 }
 
 div .poop {

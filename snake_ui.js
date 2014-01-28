@@ -44,7 +44,7 @@
   };
   
   View.prototype.step = function () {
-    if (this.running) this.board.snake.move();
+    if (this.running) this.board.move();
     if (this.board.lost()) {
       this.renderLoss();
     } else {

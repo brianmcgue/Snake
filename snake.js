@@ -1,25 +1,6 @@
 (function (root) {
   var SG = root.SG = (root.SG || {});
   
-  var Coord = SG.Coord = function (pos) {
-    this.pos = pos;
-  };
-  
-  Coord.prototype.plus = function (dir) {
-    var newCoord = [(this.pos[0] + dir[0]), (this.pos[1] + dir[1])];
-    return new SG.Coord(newCoord);
-  };
-  
-  Coord.includedIn = function (coords, target) {
-    if (!coords.length) return false;
-    for (var i = 0; i < coords.length; i++){
-      if (coords[i].pos[0] === target[0] && coords[i].pos[1] === target[1]) {
-        return true;
-      }
-    }
-    return false;    
-  };
-  
   var Snake = SG.Snake = function (options) {
     this.board = options.board;
     this.dir = options.dir;
@@ -49,8 +30,8 @@
     var newPos = this.dirMappings[this.dir];
     var newSegment = this.segments[0].plus(newPos);
     this.segments.unshift(newSegment);
-    if (SG.Coord.includedIn([this.board.apple], newSegment.pos)) {
-      this.board.apple = this.board.randomApple();
+    if (SG.Coord.includedIn([this.board.mouse], newSegment.pos)) {
+      this.board.mouse = this.board.randomMouse();
       if (!(this.segments.length % 4)) this.isGonnaPoop = true;
     } else {
       var tail = this.segments.pop();
