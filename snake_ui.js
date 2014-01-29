@@ -57,8 +57,9 @@
       return b-a;
     }).slice(0,5);
     $('.score').html('');
-    _(this.scores).each(function (score) {
-      $('.score').append(score + "<br>");      
+    _(this.scores).each(function (score, i) {
+      var stringToAppend = "              " + (i+1) + ".  " + score;
+      $('.score').append($("<pre>").html(stringToAppend));
     });
     this.setCookie(this.scores);
   };
