@@ -34,10 +34,12 @@
   
   View.prototype.getCookie = function () {
     var scoreStr = $.cookie('scores');
-    var scores = [];
-    _(scoreStr.split(",")).each(function (score) {
-      scores.push(parseInt(score));
-    });
+    if (!scoreStr) {
+      var scores = [];
+      _(scoreStr.split(",")).each(function (score) {
+        scores.push(parseInt(score));
+      });
+    }
     return scores || [0,0,0,0,0];
   };
   
