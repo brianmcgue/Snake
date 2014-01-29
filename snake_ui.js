@@ -42,7 +42,6 @@
   };
   
   View.prototype.renderLoss = function () {
-    this.renderScores();
     delete this.board;
     this.started = false;
     clearInterval(this.interval);
@@ -68,6 +67,7 @@
 
   View.prototype.start = function () {
     this.board = new SG.Board();
+    this.renderScores();
     this.installKeyHandlers();
     this.interval = setInterval(this.step.bind(this), 120);
   };
