@@ -12,7 +12,6 @@
     };
     this.running = true;
     this.scores = this.getCookie();
-    this.renderScores();
   };
   
   View.prototype.draw = function () {
@@ -69,6 +68,7 @@
 
   View.prototype.start = function () {
     this.board = new SG.Board();
+    this.renderScores();
     this.installKeyHandlers();
     this.interval = setInterval(this.step.bind(this), 120);
   };
