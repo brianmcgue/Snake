@@ -32,7 +32,7 @@
     this.segments.unshift(newSegment);
     if (SG.Coord.includedIn([this.board.mouse], newSegment.pos)) {
       this.board.mouse = this.board.randomMouse();
-      if (!(this.segments.length % 4)) this.isGonnaPoop = true;
+      if (!(this.segments.length % 3)) this.isGonnaPoop = true;
     } else {
       var tail = this.segments.pop();
       if (this.isGonnaPoop) {

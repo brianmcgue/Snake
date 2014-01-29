@@ -4,14 +4,34 @@
     </script>
     <script src= "http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min.js">
     </script>
-    <script type="text/javascript" src="snake.js"></script>
-    <script type="text/javascript" src="coord.js"></script>
-    <script type="text/javascript" src="board.js"></script>
-    <script type="text/javascript" src="snake_ui.js"></script>
+    <script src="jquery.cookie.js"></script>
+    <script src="snake.js"></script>
+    <script src="coord.js"></script>
+    <script src="board.js"></script>
+    <script src="snake_ui.js"></script>
     <link rel="stylesheet" href="snake.css">
   </head>
   <body>
+    <div class="jumbotron">      
+      <h2>Snake</h2>
+      <pre>
+        This is a snake game with a twist. Like classic snake, there is a
+        green snake that you control with the arrow keys. Instead of apples,
+        however, there is a mouse that scurries around the page. Your goal as
+        the snake is to devour the mouse, generating a new one. Eat as many
+        mice as possible without running into the walls or eating your own
+        tail.  Watch out though!  For every few mice you consume, you defecate.
+        Don't eat your own feces, or you'll die!
+        
+        Arrow keys will change the direction of the snake.
+        The spacebar pauses the game.
+        
+        Good luck!
+      </pre>
+    </div>
     <div class="container"></div>
+    <div><h3>Your Top 5 Scores</h3></div>
+    <div class="score"></div>
   </body>
   <script>
     var view = new SG.View($('.container'));

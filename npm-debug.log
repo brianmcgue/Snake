@@ -1,0 +1,238 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/opt/local/bin/node',
+1 verbose cli   '/opt/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'http-server',
+1 verbose cli   '-g' ]
+2 info using npm@1.3.11
+3 info using node@v0.10.18
+4 verbose cache add [ 'http-server', null ]
+5 verbose cache add name=undefined spec="http-server" args=["http-server",null]
+6 verbose parsed url { protocol: null,
+6 verbose parsed url   slashes: null,
+6 verbose parsed url   auth: null,
+6 verbose parsed url   host: null,
+6 verbose parsed url   port: null,
+6 verbose parsed url   hostname: null,
+6 verbose parsed url   hash: null,
+6 verbose parsed url   search: null,
+6 verbose parsed url   query: null,
+6 verbose parsed url   pathname: 'http-server',
+6 verbose parsed url   path: 'http-server',
+6 verbose parsed url   href: 'http-server' }
+7 silly lockFile ed608307-http-server http-server
+8 verbose lock http-server /Users/appacademy/.npm/ed608307-http-server.lock
+9 silly lockFile ed608307-http-server http-server
+10 silly lockFile ed608307-http-server http-server
+11 verbose addNamed [ 'http-server', '' ]
+12 verbose addNamed [ null, '*' ]
+13 silly lockFile 550353c6-http-server http-server@
+14 verbose lock http-server@ /Users/appacademy/.npm/550353c6-http-server.lock
+15 silly addNameRange { name: 'http-server', range: '*', hasData: false }
+16 verbose url raw http-server
+17 verbose url resolving [ 'http://registry.npmjs.org/', './http-server' ]
+18 verbose url resolved http://registry.npmjs.org/http-server
+19 info trying registry request attempt 1 at 00:15:24
+20 http GET http://registry.npmjs.org/http-server
+21 http 200 http://registry.npmjs.org/http-server
+22 silly registry.get cb [ 200,
+22 silly registry.get   { server: 'CouchDB/1.5.0 (Erlang OTP/R15B03)',
+22 silly registry.get     etag: '"A4ATYFZ1S1S277LTOT93C69WB"',
+22 silly registry.get     'content-type': 'application/json',
+22 silly registry.get     'content-length': '43294',
+22 silly registry.get     'accept-ranges': 'bytes',
+22 silly registry.get     date: 'Wed, 29 Jan 2014 08:15:25 GMT',
+22 silly registry.get     via: '1.1 varnish',
+22 silly registry.get     age: '0',
+22 silly registry.get     connection: 'keep-alive',
+22 silly registry.get     'x-served-by': 'cache-sv94-SJC3',
+22 silly registry.get     'x-cache': 'MISS',
+22 silly registry.get     'x-cache-hits': '0',
+22 silly registry.get     'x-timer': 'S1390983324.942938566,VS0,VE152',
+22 silly registry.get     vary: 'Accept' } ]
+23 silly addNameRange number 2 { name: 'http-server', range: '*', hasData: true }
+24 silly addNameRange versions [ 'http-server',
+24 silly addNameRange   [ '0.1.0',
+24 silly addNameRange     '0.1.1',
+24 silly addNameRange     '0.1.3',
+24 silly addNameRange     '0.2.1',
+24 silly addNameRange     '0.2.2',
+24 silly addNameRange     '0.2.3',
+24 silly addNameRange     '0.2.4',
+24 silly addNameRange     '0.2.5',
+24 silly addNameRange     '0.2.6',
+24 silly addNameRange     '0.2.9',
+24 silly addNameRange     '0.3.0',
+24 silly addNameRange     '0.4.0',
+24 silly addNameRange     '0.4.1',
+24 silly addNameRange     '0.5.0',
+24 silly addNameRange     '0.5.1',
+24 silly addNameRange     '0.5.2',
+24 silly addNameRange     '0.5.3',
+24 silly addNameRange     '0.5.5',
+24 silly addNameRange     '0.6.0',
+24 silly addNameRange     '0.6.1' ] ]
+25 verbose addNamed [ 'http-server', '0.6.1' ]
+26 verbose addNamed [ '0.6.1', '0.6.1' ]
+27 silly lockFile 1e2b2518-http-server-0-6-1 http-server@0.6.1
+28 verbose lock http-server@0.6.1 /Users/appacademy/.npm/1e2b2518-http-server-0-6-1.lock
+29 silly lockFile 71e6ba64-ttp-server-http-server-0-6-1-tgz http://registry.npmjs.org/http-server/-/http-server-0.6.1.tgz
+30 verbose lock http://registry.npmjs.org/http-server/-/http-server-0.6.1.tgz /Users/appacademy/.npm/71e6ba64-ttp-server-http-server-0-6-1-tgz.lock
+31 verbose addRemoteTarball [ 'http://registry.npmjs.org/http-server/-/http-server-0.6.1.tgz',
+31 verbose addRemoteTarball   '06fce65cf2bd4132a578bdac62ffacb97d613981' ]
+32 info retry fetch attempt 1 at 00:15:25
+33 verbose fetch to= /var/folders/5n/k9ky8bc172s219pkv4_0mxd80000gn/T/npm-2068-C5Z3OVvs/1390983325101-0.32588274870067835/tmp.tgz
+34 http GET http://registry.npmjs.org/http-server/-/http-server-0.6.1.tgz
+35 http 200 http://registry.npmjs.org/http-server/-/http-server-0.6.1.tgz
+36 verbose tar unpack /var/folders/5n/k9ky8bc172s219pkv4_0mxd80000gn/T/npm-2068-C5Z3OVvs/1390983325101-0.32588274870067835/tmp.tgz
+37 silly lockFile f357a0cb-5101-0-32588274870067835-package tar:///var/folders/5n/k9ky8bc172s219pkv4_0mxd80000gn/T/npm-2068-C5Z3OVvs/1390983325101-0.32588274870067835/package
+38 verbose lock tar:///var/folders/5n/k9ky8bc172s219pkv4_0mxd80000gn/T/npm-2068-C5Z3OVvs/1390983325101-0.32588274870067835/package /Users/appacademy/.npm/f357a0cb-5101-0-32588274870067835-package.lock
+39 silly lockFile 7f022bc8-5101-0-32588274870067835-tmp-tgz tar:///var/folders/5n/k9ky8bc172s219pkv4_0mxd80000gn/T/npm-2068-C5Z3OVvs/1390983325101-0.32588274870067835/tmp.tgz
+40 verbose lock tar:///var/folders/5n/k9ky8bc172s219pkv4_0mxd80000gn/T/npm-2068-C5Z3OVvs/1390983325101-0.32588274870067835/tmp.tgz /Users/appacademy/.npm/7f022bc8-5101-0-32588274870067835-tmp-tgz.lock
+41 silly gunzTarPerm modes [ '755', '644' ]
+42 silly gunzTarPerm extractEntry package.json
+43 silly gunzTarPerm extractEntry .npmignore
+44 silly gunzTarPerm extractEntry README.md
+45 silly gunzTarPerm extractEntry LICENSE
+46 silly gunzTarPerm extractEntry bin/http-server
+47 silly gunzTarPerm extractEntry lib/http-server.js
+48 silly gunzTarPerm extractEntry public/404.html
+49 silly gunzTarPerm extractEntry public/img/turtle.png
+50 silly gunzTarPerm extractEntry public/index.html
+51 silly gunzTarPerm extractEntry screenshots/directory.png
+52 silly gunzTarPerm extractEntry screenshots/public.png
+53 silly gunzTarPerm extractEntry screenshots/start.png
+54 silly gunzTarPerm extractEntry test/http-server-test.js
+55 silly gunzTarPerm extractEntry test/fixtures/root/canYouSeeMe
+56 silly gunzTarPerm extractEntry test/fixtures/root/file
+57 silly lockFile f357a0cb-5101-0-32588274870067835-package tar:///var/folders/5n/k9ky8bc172s219pkv4_0mxd80000gn/T/npm-2068-C5Z3OVvs/1390983325101-0.32588274870067835/package
+58 silly lockFile f357a0cb-5101-0-32588274870067835-package tar:///var/folders/5n/k9ky8bc172s219pkv4_0mxd80000gn/T/npm-2068-C5Z3OVvs/1390983325101-0.32588274870067835/package
+59 silly lockFile 7f022bc8-5101-0-32588274870067835-tmp-tgz tar:///var/folders/5n/k9ky8bc172s219pkv4_0mxd80000gn/T/npm-2068-C5Z3OVvs/1390983325101-0.32588274870067835/tmp.tgz
+60 silly lockFile 7f022bc8-5101-0-32588274870067835-tmp-tgz tar:///var/folders/5n/k9ky8bc172s219pkv4_0mxd80000gn/T/npm-2068-C5Z3OVvs/1390983325101-0.32588274870067835/tmp.tgz
+61 verbose tar pack [ '/Users/appacademy/.npm/http-server/0.6.1/package.tgz',
+61 verbose tar pack   '/var/folders/5n/k9ky8bc172s219pkv4_0mxd80000gn/T/npm-2068-C5Z3OVvs/1390983325101-0.32588274870067835/package' ]
+62 verbose tarball /Users/appacademy/.npm/http-server/0.6.1/package.tgz
+63 verbose folder /var/folders/5n/k9ky8bc172s219pkv4_0mxd80000gn/T/npm-2068-C5Z3OVvs/1390983325101-0.32588274870067835/package
+64 silly lockFile f357a0cb-5101-0-32588274870067835-package tar:///var/folders/5n/k9ky8bc172s219pkv4_0mxd80000gn/T/npm-2068-C5Z3OVvs/1390983325101-0.32588274870067835/package
+65 verbose lock tar:///var/folders/5n/k9ky8bc172s219pkv4_0mxd80000gn/T/npm-2068-C5Z3OVvs/1390983325101-0.32588274870067835/package /Users/appacademy/.npm/f357a0cb-5101-0-32588274870067835-package.lock
+66 silly lockFile 0dd86ff0-pm-http-server-0-6-1-package-tgz tar:///Users/appacademy/.npm/http-server/0.6.1/package.tgz
+67 verbose lock tar:///Users/appacademy/.npm/http-server/0.6.1/package.tgz /Users/appacademy/.npm/0dd86ff0-pm-http-server-0-6-1-package-tgz.lock
+68 silly lockFile f357a0cb-5101-0-32588274870067835-package tar:///var/folders/5n/k9ky8bc172s219pkv4_0mxd80000gn/T/npm-2068-C5Z3OVvs/1390983325101-0.32588274870067835/package
+69 silly lockFile f357a0cb-5101-0-32588274870067835-package tar:///var/folders/5n/k9ky8bc172s219pkv4_0mxd80000gn/T/npm-2068-C5Z3OVvs/1390983325101-0.32588274870067835/package
+70 silly lockFile 0dd86ff0-pm-http-server-0-6-1-package-tgz tar:///Users/appacademy/.npm/http-server/0.6.1/package.tgz
+71 silly lockFile 0dd86ff0-pm-http-server-0-6-1-package-tgz tar:///Users/appacademy/.npm/http-server/0.6.1/package.tgz
+72 silly lockFile 8ebf3e33-my-npm-http-server-0-6-1-package /Users/appacademy/.npm/http-server/0.6.1/package
+73 verbose lock /Users/appacademy/.npm/http-server/0.6.1/package /Users/appacademy/.npm/8ebf3e33-my-npm-http-server-0-6-1-package.lock
+74 silly lockFile 8ebf3e33-my-npm-http-server-0-6-1-package /Users/appacademy/.npm/http-server/0.6.1/package
+75 silly lockFile 8ebf3e33-my-npm-http-server-0-6-1-package /Users/appacademy/.npm/http-server/0.6.1/package
+76 verbose tar unpack /Users/appacademy/.npm/http-server/0.6.1/package.tgz
+77 silly lockFile db5b9002-my-npm-http-server-0-6-1-package tar:///Users/appacademy/.npm/http-server/0.6.1/package
+78 verbose lock tar:///Users/appacademy/.npm/http-server/0.6.1/package /Users/appacademy/.npm/db5b9002-my-npm-http-server-0-6-1-package.lock
+79 silly lockFile 0dd86ff0-pm-http-server-0-6-1-package-tgz tar:///Users/appacademy/.npm/http-server/0.6.1/package.tgz
+80 verbose lock tar:///Users/appacademy/.npm/http-server/0.6.1/package.tgz /Users/appacademy/.npm/0dd86ff0-pm-http-server-0-6-1-package-tgz.lock
+81 silly gunzTarPerm modes [ '755', '644' ]
+82 silly gunzTarPerm extractEntry package.json
+83 silly gunzTarPerm extractEntry .npmignore
+84 silly gunzTarPerm extractEntry README.md
+85 silly gunzTarPerm extractEntry LICENSE
+86 silly gunzTarPerm extractEntry bin/http-server
+87 silly gunzTarPerm extractEntry lib/http-server.js
+88 silly gunzTarPerm extractEntry public/404.html
+89 silly gunzTarPerm extractEntry public/img/turtle.png
+90 silly gunzTarPerm extractEntry public/index.html
+91 silly gunzTarPerm extractEntry screenshots/directory.png
+92 silly gunzTarPerm extractEntry screenshots/public.png
+93 silly gunzTarPerm extractEntry screenshots/start.png
+94 silly gunzTarPerm extractEntry test/http-server-test.js
+95 silly gunzTarPerm extractEntry test/fixtures/root/canYouSeeMe
+96 silly gunzTarPerm extractEntry test/fixtures/root/file
+97 silly lockFile db5b9002-my-npm-http-server-0-6-1-package tar:///Users/appacademy/.npm/http-server/0.6.1/package
+98 silly lockFile db5b9002-my-npm-http-server-0-6-1-package tar:///Users/appacademy/.npm/http-server/0.6.1/package
+99 silly lockFile 0dd86ff0-pm-http-server-0-6-1-package-tgz tar:///Users/appacademy/.npm/http-server/0.6.1/package.tgz
+100 silly lockFile 0dd86ff0-pm-http-server-0-6-1-package-tgz tar:///Users/appacademy/.npm/http-server/0.6.1/package.tgz
+101 verbose chmod /Users/appacademy/.npm/http-server/0.6.1/package.tgz 644
+102 verbose chown /Users/appacademy/.npm/http-server/0.6.1/package.tgz [ 501, 20 ]
+103 silly lockFile 71e6ba64-ttp-server-http-server-0-6-1-tgz http://registry.npmjs.org/http-server/-/http-server-0.6.1.tgz
+104 silly lockFile 71e6ba64-ttp-server-http-server-0-6-1-tgz http://registry.npmjs.org/http-server/-/http-server-0.6.1.tgz
+105 silly lockFile 1e2b2518-http-server-0-6-1 http-server@0.6.1
+106 silly lockFile 1e2b2518-http-server-0-6-1 http-server@0.6.1
+107 silly lockFile 550353c6-http-server http-server@
+108 silly lockFile 550353c6-http-server http-server@
+109 silly resolved [ { name: 'http-server',
+109 silly resolved     version: '0.6.1',
+109 silly resolved     author: { name: 'Nodejitsu', email: 'support@nodejitsu.com' },
+109 silly resolved     description: 'a simple zero-configuration command-line http server',
+109 silly resolved     main: './lib/http-server',
+109 silly resolved     repository:
+109 silly resolved      { type: 'git',
+109 silly resolved        url: 'git://github.com/nodeapps/http-server.git' },
+109 silly resolved     keywords: [ 'cli', 'command' ],
+109 silly resolved     scripts:
+109 silly resolved      { start: 'node ./bin/http-server',
+109 silly resolved        test: 'vows --spec --isolate' },
+109 silly resolved     contributors:
+109 silly resolved      [ [Object],
+109 silly resolved        [Object],
+109 silly resolved        [Object],
+109 silly resolved        [Object],
+109 silly resolved        [Object],
+109 silly resolved        [Object],
+109 silly resolved        [Object],
+109 silly resolved        [Object] ],
+109 silly resolved     dependencies:
+109 silly resolved      { colors: '0.6.x',
+109 silly resolved        optimist: '0.5.x',
+109 silly resolved        union: '0.3.x',
+109 silly resolved        ecstatic: '0.4.x',
+109 silly resolved        portfinder: '0.2.x',
+109 silly resolved        opener: '~1.3.0' },
+109 silly resolved     devDependencies: { vows: '0.7.x', request: '2.21.x' },
+109 silly resolved     bugs: { url: 'https://github.com/nodeapps/http-server/issues' },
+109 silly resolved     licenses: [ [Object] ],
+109 silly resolved     analyze: false,
+109 silly resolved     preferGlobal: 'true',
+109 silly resolved     bin: { 'http-server': './bin/http-server' },
+109 silly resolved     readme: '# http-server: a command-line http server\n\n`http-server` is a simple, zero-configuration command-line http server.  It is powerful enough for production usage, but it\'s simple and hackable enough to be used for testing, local development, and learning.\n\n![](https://github.com/nodeapps/http-server/raw/master/screenshots/public.png)\n\n# Installing globally:\n\nInstallation via `npm`.  If you don\'t have `npm` yet:\n\n     curl https://npmjs.org/install.sh | sh\n     \nOnce you have `npm`:\n\n     npm install http-server -g\n     \nThis will install `http-server` globally so that it may be run from the command line.\n\n## Usage:\n\n     http-server [path] [options]\n\n`[path]` defaults to `./public` if the folder exists, and `./` otherwise.\n\n# Installing as a node app\n\n     mkdir myapp\n     cd myapp/\n     jitsu install http-server\n\n*If you do not have `jitsu` installed you can install it via `npm install jitsu -g`*\n\n## Usage\n\n### Starting http-server locally\n\n     node bin/http-server\n\n*Now you can visit http://localhost:8080 to view your server*\n\n### Deploy http-server to nodejitsu\n\n     jitsu deploy\n\n*You will now be prompted for a `subdomain` to deploy your application on*\n\n## Available Options:\n\n`-p` Port to listen for connections on (defaults to 8080)\n\n`-a` Address to bind to (defaults to \'0.0.0.0\')\n\n`-d` Show directory listings (defaults to \'True\')\n\n`-i` Display autoIndex (defaults to \'True\')\n\n`-e` or `--ext` Default file extension (defaults to \'html\')\n\n`-s` or `--silent` In silent mode, log messages aren\'t logged to the console.\n\n`-h` or `--help` Displays a list of commands and exits.\n\n`-c` Set cache time (in seconds) for cache-control max-age header, e.g. -c10 for 10 seconds. To disable caching, use -c-1.\n',
+109 silly resolved     readmeFilename: 'README.md',
+109 silly resolved     _id: 'http-server@0.6.1',
+109 silly resolved     dist: { shasum: '06fce65cf2bd4132a578bdac62ffacb97d613981' },
+109 silly resolved     _from: 'http-server@',
+109 silly resolved     _resolved: 'http://registry.npmjs.org/http-server/-/http-server-0.6.1.tgz' } ]
+110 info install http-server@0.6.1 into /opt/local/lib
+111 info installOne http-server@0.6.1
+112 info /opt/local/lib/node_modules/http-server unbuild
+113 verbose tar unpack /Users/appacademy/.npm/http-server/0.6.1/package.tgz
+114 silly lockFile 72ac1c0a-cal-lib-node-modules-http-server tar:///opt/local/lib/node_modules/http-server
+115 verbose lock tar:///opt/local/lib/node_modules/http-server /Users/appacademy/.npm/72ac1c0a-cal-lib-node-modules-http-server.lock
+116 silly lockFile 0dd86ff0-pm-http-server-0-6-1-package-tgz tar:///Users/appacademy/.npm/http-server/0.6.1/package.tgz
+117 verbose lock tar:///Users/appacademy/.npm/http-server/0.6.1/package.tgz /Users/appacademy/.npm/0dd86ff0-pm-http-server-0-6-1-package-tgz.lock
+118 silly gunzTarPerm modes [ '755', '644' ]
+119 error Error: EACCES, mkdir '/opt/local/lib/node_modules/http-server'
+119 error  { [Error: EACCES, mkdir '/opt/local/lib/node_modules/http-server']
+119 error   errno: 3,
+119 error   code: 'EACCES',
+119 error   path: '/opt/local/lib/node_modules/http-server',
+119 error   fstream_type: 'Directory',
+119 error   fstream_path: '/opt/local/lib/node_modules/http-server',
+119 error   fstream_class: 'DirWriter',
+119 error   fstream_stack:
+119 error    [ '/opt/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23',
+119 error      '/opt/local/lib/node_modules/npm/node_modules/mkdirp/index.js:37:53',
+119 error      'Object.oncomplete (fs.js:107:15)' ] }
+120 error Please try running this command again as root/Administrator.
+121 error System Darwin 12.3.0
+122 error command "/opt/local/bin/node" "/opt/local/bin/npm" "install" "http-server" "-g"
+123 error cwd /Users/appacademy/Desktop/Brian/BrianSnake
+124 error node -v v0.10.18
+125 error npm -v 1.3.11
+126 error path /opt/local/lib/node_modules/http-server
+127 error fstream_path /opt/local/lib/node_modules/http-server
+128 error fstream_type Directory
+129 error fstream_class DirWriter
+130 error code EACCES
+131 error errno 3
+132 error stack Error: EACCES, mkdir '/opt/local/lib/node_modules/http-server'
+133 error fstream_stack /opt/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23
+133 error fstream_stack /opt/local/lib/node_modules/npm/node_modules/mkdirp/index.js:37:53
+133 error fstream_stack Object.oncomplete (fs.js:107:15)
+134 verbose exit [ 3, true ]

@@ -14,6 +14,7 @@
     this.mouse = this.randomMouse();
     this.mouseCounter = true;
     this.mouseDir = [0, 0];
+    this.score = 0;
   };
   
   Board.prototype.makeGrid = function (size) {
@@ -32,6 +33,7 @@
   Board.prototype.render = function () {
     var board = this;
     var $renderedDiv = $('<div>').addClass('grid');
+    $renderedDiv.html("Score: " + this.score + "<br>")
     _(this.gridSize).times(function (i) {
       _(board.gridSize).times(function (j) {
         if (SG.Coord.includedIn(board.snake.segments, [i, j])) {
@@ -73,6 +75,7 @@
   }
   
   Board.prototype.randomMouse = function(){
+    this.score += 1;
     if (this.mouse) delete this.mouse;
     while (true) {
       var randCoord = [Math.floor((Math.random()*this.gridSize)),

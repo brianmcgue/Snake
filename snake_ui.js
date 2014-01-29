@@ -11,6 +11,7 @@
       40: 'S'
     };
     this.running = true;
+    this.scores = this.getCookie();
   };
   
   View.prototype.draw = function () {
@@ -31,12 +32,34 @@
     });
   };
   
+  View.prototype.getCookie = function () {
+    var scores = $.cookie('scores') || [0,0,0,0,0];
+    return scores;
+  };
+  
   View.prototype.renderLoss = function () {
-    // alert game is over without using alert
+    this.renderScores();
     delete this.board;
     this.started = false;
     clearInterval(this.interval);
     this.start();
+  };
+  
+  View.prototype.renderScores = function () {
+    this.scores.push(this.board.score);
+    this.scores = this.scores.sort(function (a,b) {
+      return b-a;
+    }).slice(0,5);
+    $('.score').html('');
+    _(this.scores).each(function (score) {
+      $('.score').append(score + "<br>");      
+    });
+    this.setCookie(this.scores);
+  };
+  
+  View.prototype.setCookie = function (scores) {
+    var scoreStr = scores.join(",");
+    $.cookie('scores', scoreStr, { expires: 365 });
   };
 
   View.prototype.start = function () {
