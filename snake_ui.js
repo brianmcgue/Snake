@@ -33,8 +33,12 @@
   };
   
   View.prototype.getCookie = function () {
-    var scores = $.cookie('scores') || [0,0,0,0,0];
-    return scores;
+    var scoreStr = $.cookie('scores');
+    scores = [];
+    _(scoresStr.split(",")).each(function (score) {
+      scores.push(parseInt(score));
+    });
+    return scores || [0,0,0,0,0];
   };
   
   View.prototype.renderLoss = function () {
