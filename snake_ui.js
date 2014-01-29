@@ -35,7 +35,7 @@
   View.prototype.getCookie = function () {
     var scoreStr = $.cookie('scores');
     scores = [];
-    _(scoresStr.split(",")).each(function (score) {
+    _(scoreStr.split(",")).each(function (score) {
       scores.push(parseInt(score));
     });
     return scores || [0,0,0,0,0];
