@@ -18,6 +18,14 @@
     this.$el.html(this.board.render());
   };
   
+  View.prototype.installButtonHandlers = function () {
+    var view = this;
+    $(".level").on("click", function (event) {
+      view.level = this.getAttribute('id');
+      view.board.level = view.level;
+    });
+  };
+  
   View.prototype.installKeyHandlers = function () {
     var view = this;
     $(window).on("keydown", function (event) {
@@ -70,9 +78,10 @@
   };
 
   View.prototype.start = function () {
-    this.board = new SG.Board();
+    this.board = new SG.Board({ level: this.level || 'easy' });
     this.renderScores();
     this.installKeyHandlers();
+    this.installButtonHandlers();
     this.interval = setInterval(this.step.bind(this), 120);
   };
   
